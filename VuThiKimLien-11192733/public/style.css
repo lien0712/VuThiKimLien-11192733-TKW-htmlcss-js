@@ -1,0 +1,419 @@
+body{
+    font-family: Montserrat;
+    display: grid;
+    height:500px;
+    width:100% ;
+}
+/* header */
+header{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    color:white;
+}
+/* part logo */
+.nav-layer{
+    display: grid;
+    grid-template-columns: 300px auto;
+    background-color: 21243d;
+    
+}
+.logo{
+    display: grid;
+    grid-template-columns: 85px auto;
+    align-items: center;
+    padding-left: 56px;
+}
+/* part nav */
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.hamburger,.toggle-menu{
+    display: none; 
+    
+}
+.menu-nav{
+    flex:1;
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    align-items: center;
+    transition: 0.5s;
+    column-gap: 10%;
+    flex-wrap: nowrap;
+}
+.menu-nav li{
+    list-style-type:none;
+    
+}
+.menu-nav li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+    font-size: 20px;
+}
+.menu-nav li a:hover{
+    background-color:white ;
+    color: rgb(35, 35, 70);
+    border-radius: 20%;
+}
+/* main header */
+.head{
+    background-image: url("image/background-image.png");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
+.title-here{
+    font-weight: bold;
+    font-size:8vw;
+    margin:10% 0 50px 50px;
+}
+.detail-content{
+    width:40%;
+    padding-left: 50px;
+}
+.button-order{
+    width:250px;
+    height:65px;
+    margin:50px;
+    font-size: 25px;
+    background-color: 21243d; 
+    color:white;
+    border-radius: 32.5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* end header */
+/* part 1 popular menu */
+.popular-menu{
+    display:flex;
+    flex-direction: column;
+    background-color: 21243d;
+    color:white;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    padding:0 5%;
+}
+.detail-menu{
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+}
+/* part 2 order */
+.order-detail{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ffd17e;
+    padding:10%;
+}
+
+/* part 3 statistics */
+.statistics{
+    background-color:21243d;
+    color:white;
+    display: grid;
+    align-items: center; 
+    text-align: center;
+}
+.detail-static{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding:20px 80px;
+    align-items: center;
+}
+.radius{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    font-size: 4vw;
+    border-radius: 50%;
+    margin: 10px;
+    width:80% ;
+    height:100px;
+    font-weight: bold;
+}
+
+/* part 4 cv */
+.frazier{
+    background:#21243d  url("image/back-frazier.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    padding:50 10%;
+    position: relative;
+    
+}
+
+.contact a{
+    text-decoration: none;
+    color:white;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #21243d;
+    opacity:0.7;
+    position: absolute;
+    margin-top:-50px;
+}
+
+/* part 5: search */
+.subcribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: ffd17e;
+    text-align: center;
+    height:300px;
+    padding:50px;
+}
+input{
+    font-size: 20px;
+    width: 70%;
+    border-style:none;
+    height:30px;
+}
+button{
+    background-color: 21243d;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    width:150px;
+    border-radius:32px ;
+    margin-left: -20px;
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-basis: 100%;
+    background-color:black;
+    color:white;
+    align-items: start;
+    column-gap: 10%;
+    padding: 2% 0 2% 10px;
+    height: 300px;
+    
+    
+}
+
+.media{
+    flex:2;
+    
+}
+.about,.service,.other{
+    flex:1;
+    display:grid;
+    row-gap: 5%;
+}
+.about a ,.service  a ,.other a{
+    text-decoration: none;
+    color:white;
+}
+
+
+/* page.html */
+
+.menu-site{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(233, 144, 36);
+    color:white
+}
+.menu-dish{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    
+}
+ img{
+    width:100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 5%;
+}
+.detail-food{
+    display: flex;
+    flex-direction: row;
+    margin: 5% 10%;
+}
+.info-dish{
+    display:grid;
+    grid-template: auto auto/auto auto;
+}
+.food-name, .food-price{
+    font-size: 20px;
+    color:rgb(35, 35, 70);
+}
+
+.booktable{
+    box-shadow: 0 2px 5px #b4b2b2; 
+    background: #e0dada; 
+    color:black;
+    display: flex;
+    flex-direction: column;
+    margin: 5% auto;
+    padding:2%;
+    width: 60%;
+    
+}
+
+input{
+    width: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+
+}
+
+input:focus {
+    outline: 0;
+    border-color: #bd8200;
+  }
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    padding:0 10%;
+    box-shadow: 0 2px 5px #f5f5f5; 
+    background: #f5f5f5; 
+    }
+.form-button{
+    padding: 5%;
+}
+
+.form-button:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+ @media  only screen and (min-width:600px) and (max-width:1000px) {
+    body{
+        width:100%;
+    }
+    .nav-layer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-dish{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+ }
+
+/* ---- */
+@media only screen and (max-width: 600px) {
+    body{
+        width:600px;
+        
+    }
+    /* 3 gach */
+    .hamburger{
+        position: relative;
+        width:30px;
+        height: 4px;
+        background-color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+        z-index:2;
+    }
+    .hamburger:before, .hamburger:after {
+        content: '';
+        position:absolute;
+        height:4px;
+        right:0;
+        background-color: white;
+        border-radius: 10px;
+        transition: 0.3;
+       
+    }
+    .hamburger:before{
+        top:-10px;
+        width:30px;
+    }
+    .hamburger:after{
+        top :10px;
+        width:30px;
+    }
+    /* checkbox dung de an ham  */
+    .toggle-menu{
+        position: absolute;
+        width:30px;
+        height:100%;
+        z-index:3;
+        cursor: pointer;
+        opacity: 0;
+    }
+    /* dau x */
+    nav input:checked ~ .hamburger{
+        background: transparent;
+    }
+    nav input:checked ~ .hamburger:before{
+        top:0;
+        transform: rotate(-45deg);
+        width:30px;
+    }
+    nav input:checked ~ .hamburger:after{
+        top:0;
+        transform: rotate(45deg);
+        width:30px;
+    }
+    .hamburger, .toggle-menu{
+        display: block;
+    }
+    .menu-nav{
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top:0;
+        right:-350px;
+        width: 150px;
+        height:100%;
+        background-color: #21243d;
+    }
+    nav input:checked ~ .menu-nav{
+        right:0;
+    }
+    .nav-layer{
+        grid-template-columns: 1fr 50px;
+    }
+    .menu-nav li{
+        margin:10%;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .detail-static{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-dish{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    
+}

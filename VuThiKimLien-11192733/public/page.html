@@ -1,0 +1,194 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="/public/style.css">
+
+</head>
+<body>
+    <header>
+        <!-- nav -->
+        <div class="nav-layer">
+            <div class="logo">
+                <img src="image/logo.jpg" style="height:50px;width:50px;border-radius: 50%;">
+                <div style="font-size: 25px;text-transform: uppercase;" >Your logo</div>
+            </div>
+            <nav>
+                <input type="checkbox" class="toggle-menu">
+                <div class="hamburger"></div>
+                
+                <ul class="menu-nav">
+                    <li><a  href="#">Home</a></li>
+                    <li><a  href="#">Product</a></li>
+                    <li><a  href="#">Promo</a></li>
+                    <li><a  href="#">About</a></li>
+                    <li><a  href="#">Contact</a></li>
+                    <li><img src="image/Search.png" style="height:15px;width:15px;"></li>
+                </ul>  
+            </nav>
+
+        </div>
+
+        <!-- bia -->
+        <div class="head">
+            <p class="title-here">Title here</p>
+            <p class="detail-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, laudantium! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum commodi molestias ipsum voluptate, aspernatur necessitatibus. Qui, minus deserunt dicta, tempora odio consequuntur neque fugit alias eos necessitatibus, perferendis architecto nulla.
+            </p>
+            <button class="button-order" onclick="window.location.href='page.html'">Order now</button>
+            
+        </div>
+
+    </header>
+
+    <div class="menu-site">
+        <h1 style="text-align:center;">Menu</h1>
+        <div class="menu-dish">
+            <div class="detail-food">
+                <img src="image/dish1.png" class="img-food">
+                <div class="info-dish">
+                    <div class="food-name">Salmon</div>
+                    <div class="food-price">5$</div>
+                    <div>Lorem ipsum dolor, sit amet consectetur </div>
+                </div>
+            </div>
+            <div class="detail-food">
+                <img src="image/dish1.png" class="img-food">
+                <div class="info-dish">
+                    <div class="food-name">Tuna</div>
+                    <div class="food-price">3$</div>
+                    <div>Lorem ipsum dolor, sit amet consectetur </div>
+                </div>
+            </div>
+            <div class="detail-food">
+                <img src="image/dish2.png" class="img-food">
+                <div class="info-dish">
+                    <div class="food-name">Fluke</div>
+                    <div class="food-price">5$</div>
+                    <div>Lorem ipsum dolor, sit amet consectetur </div>
+                </div>
+            </div>
+            <div class="detail-food">
+                <img src="image/dish2.png" class="img-food">
+                <div class="info-dish">
+                    <div class="food-name">Strip Bass</div>
+                    <div class="food-price">3$</div>
+                    <div>Lorem ipsum dolor, sit amet consectetur </div>
+                </div>
+            </div>
+            <div class="detail-food">
+                <img src="image/dish3.png" class="img-food">
+                <div class="info-dish">
+                    <div class="food-name">Shrimp</div>
+                    <div class="food-price">5$</div>
+                    <div>Lorem ipsum dolor, sit amet consectetur </div>
+                </div>
+            </div>
+            <div class="detail-food">
+                <img src="image/dish3.png" class="img-food">
+                <div class="info-dish">
+                    <div class="food-name">Shrimp Tempura</div>
+                    <div class="food-price">5$</div>
+                    <div>Lorem ipsum dolor, sit amet consectetur </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="booktable">
+        <form method="post" id="book_form">
+            <h1>Book table</h1>
+            <div class="info">
+                <label>First Name<input type="text" id="fname" ></label>
+                
+                <label>Last Name<input type="text" id="lname"></label>
+                
+                <label>Phone<input type="number" id="phone"> </label>
+                
+                <label>Email<input type="email" id="email"></label>
+                
+                <label>No of person<input type="number" id="nop"></label>
+                
+                <label>Date<input type="date" id="date"></label>
+                
+                <label>Time<input type="time" id="time"></label>
+                
+                <label>Notice<input type="textarea" style="height: 100px" id="notice"></label>
+                
+            </div>
+            
+            <div class="form-button">
+                <button onclick="writeData()">Submit </button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="media">
+            <p>Title here</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id incidunt cum, nulla officia saepe aliquam eveniet, doloremque quos modi consequatur ipsum rem </p>
+            <a  href="#"><img src="image/Instagram.png" style="width:30px;"></a>
+            <a  href="#"><img src="image/Facebook.png" style="width:30px;"></a>
+            <a  href="#"><img src="image/twitter.png" style="width:30px;"></a>
+            <a href="#"><img src="image/WhatsApp.png" style="width:30px;"></a>
+        </div>
+        <div class="about">
+            <a href="#">About</a>
+            <a href="#">History</a>
+            <a href="#">Our Team</a>
+            <a href="#">Brand Guidelines</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="service">
+            <a href="#">Services</a>
+            <a href="#">How to order</a>
+            <a href="#">Order Status</a>
+            <a href="#">Promo</a>
+            <a href="#">Payment Method</a>
+        </div>
+        <div class="other">
+            <a href="#">Other</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Help</a>
+            <a href="#">Privacy</a>
+        </div>
+    </footer>
+    
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyAs2YaV0tz5EoHInfLjyHgNqKk_uQyH1GA",
+            authDomain: "thietkeweb-88aba.firebaseapp.com",
+            databaseURL: "https://thietkeweb-88aba-default-rtdb.firebaseio.com",
+            projectId: "thietkeweb-88aba",
+            storageBucket: "thietkeweb-88aba.appspot.com",
+            messagingSenderId: "105897501588",
+            appId: "1:105897501588:web:bbebb0421559b47c932581",
+            measurementId: "G-SX3ES8VXCT"
+};
+        function writeData(){
+            firebase.database().ref("TableBook").set({
+            fname: document.getElementById('fname').value,
+            lname: document.getElementById('lname').value,
+            phone: document.getElementById('phone').value,
+            email: document.getElementById('email').value,
+            no_of_person: document.getElementById('nop').value,
+            date: document.getElementById('date').value,
+            time: document.getElementById('time').value,
+            notice: document.getElementById('notice').value,
+        
+    });
+}
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-analytics.js";></script>
+    <!-- <script src="/public/main.js"></script> -->
+    <!-- <script type="module" src="/public/main.js"></script> -->
+</body>
+</html>
